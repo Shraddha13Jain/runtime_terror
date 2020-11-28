@@ -1,0 +1,463 @@
+</html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    * {
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: url('https://anshulgupta.in/images/login-bg.png') repeat;
+  height: 100vh;
+  background-size: contain;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 40px;
+  margin-block-start: 1em;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+form {
+  margin: auto;
+  margin-top: 20px;
+    max-width: 300px;
+    position: relative;
+}
+
+::placeholder {
+  color: #9B9E9E;
+}
+
+input {
+  background: #F5F8F8;
+  outline: none;
+    border: 0;
+    width: 300px;
+    height: 45px;
+    position: relative;
+    display: block;
+    margin-top: 8px;
+    padding: 10px 10px 10px 34px;
+}
+
+.container {
+  width: 1200px;
+  background: rgba(255, 255, 255, 0.35);;
+  height: 94%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  text-align: center;
+  margin: 22px 10%;
+}
+
+.logo img {
+  position: fixed;
+    top: 30px;
+    width: 60px;
+    left: 180px;
+    z-index: 1000;
+}
+
+.w40 {
+  width: 40%;
+  background: rgba(240, 52, 52, .93);
+  height: 100%;
+  padding-top: 130px;
+  position: relative;
+}
+
+.w60 {
+  width: 60%;
+  background: #fff;
+  height: 100%;
+  padding-top: 82px;
+}
+
+.w60 h1 {
+  color: #F03434;
+}
+
+label::before {
+  left: 10px;
+  color: #9B9E9E;
+}
+
+.lname::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f007';
+  position: absolute;
+  top: 12px;
+}
+
+.lemail::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f0e0';
+  position: absolute;
+  top: 28%;
+}
+
+.lpass::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f023';
+  position: absolute;
+  bottom: 42%;
+}
+
+.w40 p {
+  width: 60%;
+  margin: auto;
+  color: #f5f5f5;
+}
+
+.w60 p {
+  color: #B3B4B4;
+  margin-top: 48px;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-top: 72px;
+  cursor: pointer;
+  line-height: 53px;
+}
+
+.btn:active {
+  transform: scale(.98);
+  transition: scale .4s;
+}
+
+.green-btn {
+  background: #F03434;
+  border: 0;
+  margin-top: 35px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.w40.active {
+  position: relative;
+  z-index: 100;
+  animation: leftToRight .6s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftToRight {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 10%;
+    width: 70%;
+  }
+  80% {
+    left: 40%;
+    width: 70%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+
+.w60.active {
+  position: relative;
+  animation: rightToLeft .6s ease;
+  animation-fill-mode: forwards;
+  padding: 110px 0;
+}
+
+@keyframes rightToLeft {
+  0% {
+    right: 0;
+    opacity: 0;
+  }
+  10% {
+    right: 15%;
+    width: 45%;
+    opacity: 0;
+  }
+  80% {
+    right: 15%;
+    width: 45%;
+    opacity: 0;
+  }
+  100% {
+    right: 40%;
+    opacity: 1;
+  }
+}
+
+.w40.shift-left {
+  position: relative;
+  z-index: 100;
+  animation: shift-left .5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shift-left {
+  0% {
+    left: 60%;
+  }
+  10% {
+    left: 50%;
+    width: 70%;
+  }
+  80% {
+    left: 20%;
+    width: 70%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.w60.shift-right {
+  position: relative;
+  animation: shift-right 400ms ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shift-right {
+  0% {
+    right: 40%;
+    opacity: 0;
+  }
+  10% {
+    right: 25%;
+    width: 45%;
+    opacity: 0;
+  }
+  80% {
+    right: 10%;
+    width: 45%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.signInBox, .signOutBox {
+  position: absolute;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  top: 185px;
+}
+
+.signInBox {
+  left: -100%;
+  visibility: hidden;
+  transition: left 800ms ease;
+}
+
+.signInBox.active {
+  left: 10px;
+  visibility: visible;
+}
+
+/* .signInBox .text {
+  visibility: hidden;
+}
+
+.signInBox.active .text {
+  left: 10px;
+  visibility: visible;
+}
+
+.signInBox .sign-in-btn {
+  visibility: hidden;
+}
+
+.signOutBox .sign-up-btn {
+  visibility: hidden;
+}
+
+.signInBox.active .sign-in-btn {
+  visibility: visible;
+}
+
+.signOutBox.active .sign-up-btn {
+  visibility: visible;
+}
+
+.signInBox.active .sign-in-btn.active {
+  width: 280px;
+  transform: translateX(100px);
+}
+
+.signOutBox.active .sign-up-btn.active {
+  width: 280px;
+  transform: translateX(-100px);
+} */
+
+.signOutBox {
+  right: -100%;
+  visibility: hidden;
+  transition: right 800ms ease;
+}
+
+.signOutBox.active {
+  right: 32px;
+  visibility: visible;
+}
+
+/* .signOutBox .text {
+  right: 32px;
+  visibility: hidden;
+}
+
+.signOutBox.active .text {
+  right: 32px;
+  visibility: visible;
+} */
+
+.new-account-section {
+  display: block;
+}
+
+.new-account-section.active {
+  visibility: hidden;
+  display: none;
+}
+
+.sign-in-section {
+  display: none;
+}
+
+.sign-in-section.active {
+  display: block;
+}
+
+.sign-in-section .lemail::before {
+  top: 7%;
+}
+
+.sign-in-section .lpass::before {
+  bottom: 55%;
+}
+</style>
+  </head>
+  <body>
+    <%- include ("partials/header") %>
+    <div class="container">
+    <div class="logo">
+      <img src="https://anshulgupta.in/images/designersnest.png" alt="designersnest">
+    </div>
+    <div class="w40">
+      <div class="signInBox active">
+        <div class="text">
+          <h3>Welcome Back!</h3>
+      <p>To keep connected with us please login with your personal info</p>
+        </div>
+      <button class="btn"><a href="/login.html" style="color:white;">log in</a></button>
+      </div>
+      <div class="signOutBox">
+        <div class="text">
+          <h3>Hello Friend!</h3>
+      <p>Enter your personal details and start your journey with us</p>
+        </div>
+      <button class="btn sign-up-btn">sign up</button>
+      </div>
+    </div>
+    <div class="w60">
+     <div class="new-account-section">
+      <h1>Create Account</h1>
+
+      <form method="POST" action="/profile">
+          <input type="text" id="name" placeholder="Name" name="name">
+          <input type="email" id="email" placeholder="Email" name="email">
+          <input type="password" id="password" placeholder="Password" name="password">
+          <input type="text" id="name" placeholder="image url" name="imageurl">
+          <input type="text" id="name" placeholder="blood group" name="bloodGroup">
+          <input type="city" id="name" placeholder="address" name="address">
+
+
+          <button class="btn green-btn">sign up</button>
+      </form>
+     </div>
+     <div class="sign-in-section">
+
+       <form method="POST" action="/profile">
+           <input type="text" id="name" placeholder="Name" name="name">
+           <input type="email" id="email" placeholder="Email" name="email">
+           <input type="password" id="password" placeholder="Password" name="password">
+           <input type="text" id="name" placeholder="image url" name="imageurl">
+           <input type="text" id="name" placeholder="blood group" name="bloodGroup">
+           <input type="city" id="name" placeholder="address" name="address">
+
+
+           <button class="btn green-btn">sign up</button>
+       </form>
+     </div>
+    </div>
+  </div>
+
+    <%- include ("partials/footer") %>
+    <script>
+      $(function() {
+  $(".sign-in-btn").click(function() {
+   $(".w40").addClass("active");
+   $(".sign-in-btn").addClass("active");
+   $(".sign-up-btn").removeClass("active");
+   $(".signInBox").removeClass("active");
+   $(".signOutBox").addClass("active");
+   $(".w40").removeClass("shift-left");
+   $(".w60").removeClass("shift-right");
+   $(".w60").addClass("active");
+   $(".new-account-section").addClass("active");
+   $(".sign-in-section").addClass("active");
+  });
+});
+$(function() {
+  $(".sign-up-btn").click(function() {
+   $(".sign-in-btn").removeClass("active");
+   $(".sign-up-btn").addClass("active");
+   $(".w40").removeClass("active");
+   $(".w40").addClass("shift-left");
+   $(".signInBox").addClass("active");
+   $(".signOutBox").removeClass("active");
+   $(".w60").removeClass("active");
+   $(".w60").addClass("shift-right");
+   $(".new-account-section").removeClass("active");
+   $(".sign-in-section").removeClass("active");
+  });
+});
+</script>
+    </body>
+</html>

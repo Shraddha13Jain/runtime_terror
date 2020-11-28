@@ -1,0 +1,111 @@
+
+
+body
+{
+    background-color: white;
+}
+
+.navbar-nav .nav-items:hover
+		{
+			background: white;
+			border-radius: 16px;
+		}
+		.navbar-nav .nav-link:hover
+		{
+			color: black;
+		}
+		.navbar-nav .nav-items
+		{
+			margin: 0 8px; 
+
+		}
+		.navbar-nav .nav-link
+		{
+			color: white;
+			font-weight: 500;
+		}
+		.navbar .navbar-brand
+		{
+			color: white;
+			font-weight: 500;
+			text-decoration: none;
+		}
+
+
+#intro
+{
+   
+    animation: animate 10s ease-in infinite;
+    
+}
+
+#hi
+{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+    opacity: 2;
+    font-family: 'Itim', cursive;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px black;
+    
+}
+#profile h1
+{
+    text-align: center;
+    
+}
+#profile hr
+{
+    width: 50%;
+    margin: auto;
+}
+.about
+{
+  
+    opacity: 0;
+}
+.about .animate__animated
+{
+    
+    opacity: 1;
+    letter-spacing: 2px;
+}
+
+
+
+.ind
+{
+    opacity: 0;
+}
+.ind .animate__animated
+{
+    opacity: 1;
+}
+
+.indi
+{
+   
+    opacity: 1;
+}
+.indi .animate__animated
+{
+ 
+    opacity: 1;
+}
+
+
+@keyframes animate{
+    0%,100%{
+        background: url('305477144_42c3b3da49_o.webp');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    50%{
+        background: url('pic2.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+	<style type="text/css">
+		.content{
+				position: relative;
+				height: 80%;
+				color: black;
+				background: white;
+			}
+
+		.content hr{
+			position: relative;
+			height: 2px;
+			width: 70%;
+			left: 50%;
+			transform: translateX(-50%);
+			border:none;
+			background-color: black;
+		}
+		.content h1{
+			font-family: 'Comfortaa', cursive;
+			position: relative;
+			margin-left: 5px;
+			width: 70%;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+			margin-bottom: 5px;
+			letter-spacing: 4px;
+			font-size: 44px
+		}
+
+
+		#desc{
+			font-family: 'Sans-Serif', cursive;
+			width: 70%;
+			left: 50%;
+			transform: translateX(-50%);
+			margin: 5px;
+			word-spacing: 4px;
+			font-size: 20px;
+			color: black;
+			text-shadow: 1px 1px 10px #F0F3F4;
+			text-align: justify;
+			position: relative;
+		}
+		#desc strong{
+			color: #17202A;
+			font-size: 22px;
+
+		}
+		video{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			object-fit: cover;
+			opacity: 1;
+		}
+		.v2{
+				background: rgba(214, 234, 248,0.4);
+				position: relative;
+				width: 70%;
+				left: 50%;
+				box-shadow: 1px 1px 10px black;
+				transform: translateX(-50%);
+			}
+
+		tr:hover{
+			background-color: rgba(200,0,600,0.7);
+		}
+		td,th{
+			text-align: justify;
+			border: 1px solid black;
+			padding: 10px;
+		}
+		table{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td:hover{
+			transform: scale(1.2);
+		}
+		td a{
+			text-decoration: none;
+			color: black;
+			text-shadow: 1px 2px 3px black;
+			font-family: 'Satisfy', cursive;
+			transition: transform 2s;
+
+		}
+		td a:hover{
+			color: orange;
+			transform: scale(1.2);
+		}
+		.tabs{
+
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			border: 1px solid black;
+		}
+		.tabs th{
+			position: sticky;
+			top: 0;
+		}
+		#search {
+		  background-image: url('/css/searchicon.png');
+		  background-position: 10px 12px;
+		  background-repeat: no-repeat;
+		  width: 100%;
+		  font-size: 16px;
+		  padding: 12px 20px 12px 40px;
+		  border: 1px solid #ddd;
+		  margin-bottom: 12px;
+		}
+
+
+
+	</style>
+	<title>Plasma Donor</title>
+</head>
+<body onload="myFunction()">
+  <%- include ("partials/header") %>
+
+<div id="loading"></div>
+			<div class="content">
+
+					<h1>Plasma Donor</h1><hr>
+					<video src="bg.mp4" autoplay muted loop></video>
+					<div class="v2"><p id="desc">
+						<font size="20" face="Sans-Serif">How to donate plasma safely</font>
+						<br><br>
+
+						<strong>Make sure you’re visiting an accredited center.</strong> Your donation center should put you through a screening process that involves taking an initial blood test, filling out a questionnaire, and performing a physical exam. A red flag is if your donation center does not go through these processes. Check with the American Red Cross to find the accredited plasma donation center closest to you.
+						<br><br>
+						<strong>Make sure you’re visiting an accredited center.</strong> Your donation center should put you through a screening process that involves taking an initial blood test, filling out a questionnaire, and performing a physical exam. A red flag is if your donation center does not go through these processes. Check with the American Red Cross to find the accredited plasma donation center closest to you.
+						Monitor how frequently you donate. You can donate plasma every 28 days, up to 13 times per year. While the FDA does allow donors to give plasma more frequently, this is the best practice for safety, according to the American Red Cross. The whole process takes about an hour and 15 minutes.
+						<br><br>
+						<strong>Make sure you’re visiting an accredited center.</strong> Your donation center should put you through a screening process that involves taking an initial blood test, filling out a questionnaire, and performing a physical exam. A red flag is if your donation center does not go through these processes. Check with the American Red Cross to find the accredited plasma donation center closest to you.
+						Hydrate before your visit. Drink an extra 16 ounces of clear, nonalcoholic fluids (preferably water) before your donation. This can help prevent dizziness, fainting, lightheadedness, and fatigue, some of the most common side effects associated with plasma donation.
+					</p><br><br></div>
+
+	</div>
+	<div class="bg2">
+		<video src="bg2.mp4" autoplay muted loop></video>
+	<div class="wrapper">
+
+  <div class="radio_tabs">
+    <label class="radio_wrap" data-radio="radio_1">
+      <input type="radio" name="sports" class="input" checked>
+      <span class="radio_mark">
+       	A+
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_2">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        A-
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_3">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        B+
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_4">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        B-
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_5">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        AB+
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_6">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        AB-
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_7">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        O+
+      </span>
+    </label>
+    <label class="radio_wrap" data-radio="radio_8">
+      <input type="radio" name="sports" class="input">
+      <span class="radio_mark">
+        O-
+      </span>
+    </label>
+  </div>
+
+  <div class="content">
+    <div class="radio_content radio_1">
+    <input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table width="100%">
+			<tbody>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+				<tr>
+					<td>Ambala, Haryana</td>
+					<td>Vishakha</td>
+					<td>A+</td>
+					<td>8570894042</td>
+				</tr>
+				<tr>
+					<td>Ramnagar, Bihar</td>
+					<td>Sahil</td>
+					<td>A+</td>
+					<td>9801509595</td>
+				</tr>
+				<tr>
+					<td>Sonepat, Haryana</td>
+					<td>Anurag</td>
+					<td>A+</td>
+					<td>9896140933</td>
+				</tr>
+				<tr>
+					<td>Gurugram, Haryana</td>
+					<td>Navraj</td>
+					<td>A+</td>
+					<td>9910689235</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_2">
+     	<input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table>
+			<tbody>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+				<tr>
+					<td>Alwar, Rajasthan</td>
+					<td>Mayank</td>
+					<td>A-</td>
+					<td>8875471224</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_3">
+      	<input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table width="466">
+			<tbody>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+				<tr>
+					<td>Bareilly, U.P.</td>
+					<td>Devang</td>
+					<td>B+</td>
+					<td>7906829447</td>
+				</tr>
+				<tr>
+					<td>Gaya, Bihar</td>
+					<td>Raj</td>
+					<td>B+</td>
+					<td>7654253622</td>
+				</tr>
+				<tr>
+					<td>Amritsar, Punjab</td>
+					<td>Riya</td>
+					<td>B+</td>
+					<td>6284790040</td>
+				</tr>
+				<tr>
+					<td>Faridabad, Haryana</td>
+					<td>Saurabh</td>
+					<td>B+</td>
+					<td>8527299005</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_4">
+      	<input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table width="466">
+			<tbody>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_5">
+      	<input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table width="466">
+			<tbody>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+				<tr>
+					<td>Etah, U.P.</td>
+					<td>Ankesh</td>
+					<td>AB+</td>
+					<td>9571736707</td>
+				</tr>
+				<tr>
+					<td>Bhiwani, Haryana</td>
+					<td>Ravi</td>
+					<td>AB+</td>
+					<td>9671502002</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_6">
+      	<<input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table width="466">
+			<tbody>
+				<tr>
+					<th>City</th>
+					<th>Name</th>
+					<th>Blood Group</th>
+					<th>Contact No.</th>
+				</tr>
+				<tr>
+					<td>Faridabad, Haryana</td>
+					<td>Himanshu</td>
+					<td>AB-</td>
+					<td>7678456033</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_7">
+      <input type="text" name="search" id="search" placeholder="Search..." />
+      <div class="tabs">
+	 	<table width="466">
+			<thead>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Varanasi, U.P.</td>
+					<td>Shivam</td>
+					<td>O+</td>
+					<td>7084217816</td>
+				</tr>
+				<tr>
+					<td>Hisar, Haryana</td>
+					<td>Shraddha</td>
+					<td>O+</td>
+					<td>9306906687</td>
+				</tr>
+				<tr>
+					<td>Gurugram, Haryana</td>
+					<td>Aarushi</td>
+					<td>O+</td>
+					<td>7678553789</td>
+				</tr>
+				<tr>
+					<td>Kurukshetra, Haryana</td>
+					<td>Nitin</td>
+					<td>O+</td>
+					<td>9466751782</td>
+				</tr>
+				<tr>
+					<td>Moradabad, U.P.</td>
+					<td>Rachit</td>
+					<td>O+</td>
+					<td>97617820552</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    </div>
+    <div class="radio_content radio_8">
+      	<input type="text" id="search" name="search" placeholder="Search for names..">
+      <div class="tabs">
+	 	<table width="466">
+			<tbody>
+				<tr>
+					<th width="207">City</th>
+					<th width="123">Name</th>
+					<th width="136">Blood Group</th>
+					<th width="147">Contact No.</th>
+				</tr>
+				<tr>
+					<td>Gaya, Bihar</td>
+					<td>Hritik</td>
+					<td>O-</td>
+					<td>9204251707</td>
+				</tr>
+				<tr>
+					<td>Madhubani, Bihar</td>
+					<td>Sandeep</td>
+					<td>O-</td>
+					<td>8368065287</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    </div>
+  </div>
+</div>
+</div>
+<script >
+		const searchInput = document.getElementById("search");
+		const rows = document.querySelectorAll("tbody tr");
+		//console.log(rows);
+
+		searchInput.addEventListener("keyup",function (event){
+			//console.log(event);
+			const q = event.target.value.toLowerCase();
+			rows.forEach((row) => {
+				rows.querySelector("td").textContent.toLowerCase().startsWith(q)
+					? (row.style.display = "table-row")
+					: (row.style.display = "none");
+			});
+		});
+	</script>
+<script>
+    /* by default hide all radio_content div elements except first element */
+      $(".content .radio_content").hide();
+      $(".content .radio_content:first-child").show();
+
+      /* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
+      $(".radio_wrap").click(function(){
+        var current_raido = $(this).attr("data-radio");
+        $(".content .radio_content").hide();
+        $("."+current_raido).show();
+      })
+  </script>
+
+
+	<script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
+
+
+</body>
+</html>
